@@ -43,7 +43,7 @@ async function getKategoriDaerah() {
         <div class="card-body">
         <h5 class="card-title">${result[i].name}</h5>
         <br>
-        <a href="#" class="btn btn-primary">Lihat</a>
+        <a href="/merchandise.html" class="btn btn-primary">Lihat</a>
         </div>
         </div>
         </div>
