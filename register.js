@@ -13,10 +13,10 @@ function register(){
   };
 
   localStorage.setItem("user", JSON.stringify(userData));
-  localStorage.setItem("isLogin",true);
-  if("user"!=null){
+  
+  if(userData!=null){
     location="./profile-page.html";
-    
+    localStorage.setItem("isLogin",true);
   }
 };
 const showPasswordEl = document.querySelector("#showPassword")
