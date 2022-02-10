@@ -20,81 +20,73 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <img src="/pictures/hands.png" width="50px" />
-        <a class="navbar-brand p-3" href="#">BuahTangan</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Daerah
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Yogyakarta</a></li>
-                <li><a class="dropdown-item" href="#">Manado</a></li>
-                <li><a class="dropdown-item" href="#">Medan</a></li>
-                <li><a class="dropdown-item" href="#">Bali</a></li>
-                <li><a class="dropdown-item" href="#">Pontianak</a></li>
+          <img src="/pictures/hands.svg" width="50px" />
+          <a class="navbar-brand p-3" href="/index.html">BuahTangan</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Daerah
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="/single-daerah-kategori.html">Medan</a></li>
+                          <li><a class="dropdown-item" href="/single-daerah-kategori.html">Manado</a></li>
+                          <li><a class="dropdown-item" href="/single-daerah-kategori.html">Yogyakarta</a></li>
+                          <li><a class="dropdown-item" href="/single-daerah-kategori.html">Bali</a></li>
+                          <li><a class="dropdown-item" href="/single-daerah-kategori.html">Pontianak</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Kategori
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="/merchandise.html">Pakaian</a></li>
+                          <li><a class="dropdown-item" href="/merchandise.html">Patung</a></li>
+                          <li><a class="dropdown-item" href="/merchandise.html">Makanan</a></li>
+                          <li><a class="dropdown-item" href="/merchandise.html">Kain</a></li>
+                          <li><a class="dropdown-item" href="/merchandise.html">Senjata</a></li>
+                      </ul>
+                  </li>
               </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Kategori
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Pakaian</a></li>
-                <li><a class="dropdown-item" href="#">Patung</a></li>
-                <li><a class="dropdown-item" href="#">Makanan</a></li>
-                <li><a class="dropdown-item" href="#">Kain</a></li>
-                <li><a class="dropdown-item" href="#">Senjata</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              <img src="/pictures/find.png" width="20px" />
-            </button>
-          </form>
-        </div>
-        <button class="btn btn-outline-info m-2">
-          <img src="/pictures/shopping-basket.png" width="20px" />
-        </button>
-        <button class="btn btn-outline-primary rounded-pill m-1">
-          <img src="/pictures/private-account.png" width="30px" />
-        </button>
-      </div>
-    </nav>
+              <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                  <button class="btn btn-outline-success" type="submit">
+                      <img src="/pictures/search.svg" width="20px" />
+                  </button>
+              </form>
 
+          </div>
+          <a class="btn btn-outline-info m-2" href="/cartpage.html">
+              <img src="/pictures/cart.svg" width="20px" />
+          </a>
+
+          <div class="dropdown">
+              <a id="profileButton" class="btn btn-secondary dropdown-toggle  d-none" href="#" role="button"
+                  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="/pictures/approved-profile.svg" width="30px" />
+              </a>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="/profile-page.html">Profile</a></li>
+                  <li><button id="btn-Logout" class="btn btn-secondary dropdown-item">Log Out</button></li>
+              </ul>
+          </div>
+
+          <a id="loginButton" class="btn btn-secondary m-1" href="/login-page.html">
+              <img src="/pictures/unapproved-profile.svg" width="30px" />
+          </a>
+      </div>
+
+      </div>
+  </nav>
 <!--content-->
 <!--img card overlay-->
     <div class="card mt-5 bg-dark text-white align-self-center mx-auto" style="width:50%; height:20%;">

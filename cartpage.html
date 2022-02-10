@@ -63,12 +63,24 @@
         <a class="btn btn-outline-info m-2" href="/cartpage.html">
             <img src="/pictures/cart.svg" width="20px" />
         </a>
-        <a id="profileButton" class="btn btn-outline-primary rounded-pill m-1 d-none" href="/profile-page.html">
-            <img src="/man (1).png" width="30px" />
+
+        <div class="dropdown">
+            <a id="profileButton" class="btn btn-secondary dropdown-toggle  d-none" href="#" role="button"
+                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="/pictures/approved-profile.svg" width="30px" />
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="/profile-page.html">Profile</a></li>
+                <li><button id="btn-Logout" class="btn btn-secondary dropdown-item">Log Out</button></li>
+            </ul>
+        </div>
+
+        <a id="loginButton" class="btn btn-secondary m-1" href="/login-page.html">
+            <img src="/pictures/unapproved-profile.svg" width="30px" />
         </a>
-        <a id="loginButton" class="btn btn-outline-primary rounded-pill m-1" href="/login-page.html">
-          <img src="/man.png" width="30px" />
-        </a>
+    </div>
+
     </div>
 </nav>
   <!-- cart from template -->

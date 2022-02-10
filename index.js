@@ -65,11 +65,13 @@ getDataDaerah();
     loginButton.classList.add("d-none")
 };
 
-// const logout = () => {
-//     localStorage.removeItem(loginVerify);
-//   };
+// LogOut
+const btnLogout = document.querySelector("#btn-Logout");
 
-//   function logginOut(logout){
-//       logout
-//   }
-//   document.querySelector("#logout").onClick = logginOut;
+    btnLogout.onclick = function(){
+        localStorage.setItem("isLogin",false);
+    
+        if("isLogin"!=true){
+            location = "./login-page.html";
+        }
+    }

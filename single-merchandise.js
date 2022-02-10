@@ -78,12 +78,12 @@ const addToCart = (name, price, quantity) => {
 
   localStorage.setItem("cart", JSON.stringify(cartList));
 };
-
+const loginVerify = JSON.parse(localStorage.getItem('isLogin'));
 const loginButton = document.querySelector("#loginButton");
 const cartButton = document.querySelector("#cartButton");
 
-if(verifyLogin===true) {
-  loginButton.classList.add("d-none")
+if(loginVerify===true) {
+  sButton.classList.add("d-none")
   cartButton.classList.remove("d-none")
 };
 
