@@ -59,3 +59,13 @@ if(loginVerify===true){
     checkoutLogin.classList.add("d-none")
 };
 
+// LogOut
+const btnLogout = document.querySelector("#btn-Logout");
+
+btnLogout.onclick = function(){
+    localStorage.setItem("isLogin",false);
+
+    if("isLogin"!=true){
+        location = "./login-page.html";
+    }
+}

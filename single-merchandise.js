@@ -87,3 +87,15 @@ if(loginVerify===true) {
   cartButton.classList.remove("d-none")
 };
 
+
+
+// LogOut
+const btnLogout = document.querySelector("#btn-Logout");
+
+btnLogout.onclick = function(){
+    localStorage.setItem("isLogin",false);
+
+    if("isLogin"!=true){
+        location = "./login-page.html";
+    }
+}
