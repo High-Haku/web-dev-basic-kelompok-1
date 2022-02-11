@@ -1,7 +1,8 @@
 const elRegist = document.querySelector("#register");
 elRegist.onclick = register;
 
-function register(){
+function register(e){
+  e.preventDefault();
   const emailInput = document.querySelector("#email").value;
   const userNameInput = document.querySelector("#username").value;
   const passInput = document.querySelector("#password").value;
